@@ -2960,69 +2960,135 @@
     }, 
     "120000": {
         "desc": "Multiplies experience by 1.5 after Quest is cleared", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "79", 
+                    "unknown proc param": "50"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
         "id": 120000, 
+        "max equipped": 1, 
         "max_stack": 99, 
         "name": "Experience Token", 
         "raid": false, 
         "rarity": 2, 
         "sell_price": 500, 
         "thumbnail": "item_thum_90000.png", 
-        "type": null
+        "type": "summoner_consumable"
     }, 
     "120001": {
         "desc": "Multiplies experience by 2 after Quest is cleared", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "79", 
+                    "unknown proc param": "100"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
         "id": 120001, 
+        "max equipped": 1, 
         "max_stack": 99, 
         "name": "Experience Badge", 
         "raid": false, 
         "rarity": 3, 
         "sell_price": 1000, 
         "thumbnail": "item_thum_90100.png", 
-        "type": null
+        "type": "summoner_consumable"
     }, 
     "120010": {
         "desc": "Multiplies Item drop rate by 1.5 after Raid Quest is cleared when activated from map", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "908", 
+                    "unknown proc param": "50"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
         "id": 120010, 
+        "max equipped": 1, 
         "max_stack": 99, 
         "name": "Fortune Box", 
         "raid": true, 
         "rarity": 2, 
         "sell_price": 500, 
         "thumbnail": "item_thum_91000.png", 
-        "type": null
+        "type": "summoner_consumable"
     }, 
     "120011": {
         "desc": "Multiplies Item drop rate by 2 after Raid Quest is cleared when activated from map ", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "908", 
+                    "unknown proc param": "100"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
         "id": 120011, 
+        "max equipped": 1, 
         "max_stack": 99, 
         "name": "Fortune Coffer", 
         "raid": true, 
         "rarity": 0, 
         "sell_price": 1000, 
         "thumbnail": "item_thum_91100.png", 
-        "type": null
+        "type": "summoner_consumable"
     }, 
     "130000": {
         "desc": "Multiplies Summoner EXP, weapon EXP, and SP by 1.5 whenever a Quest is cleared for 30min", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "79", 
+                    "unknown proc param": "50,30"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
         "id": 130000, 
+        "max equipped": 1, 
         "max_stack": 99, 
         "name": "Experience Water", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 500, 
         "thumbnail": "item_thum_92000.png", 
-        "type": null
+        "type": "summoner_consumable"
     }, 
     "130001": {
         "desc": "Multiplies Summoner EXP, weapon EXP, and SP by 2 whenever a Quest is cleared for 30min", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "79", 
+                    "unknown proc param": "100,30"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
         "id": 130001, 
+        "max equipped": 1, 
         "max_stack": 99, 
         "name": "Experience Tonic", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 1000, 
         "thumbnail": "item_thum_92100.png", 
-        "type": null
+        "type": "summoner_consumable"
     }, 
     "20000": {
         "desc": "Slightly replenishes one ally's HP.", 
@@ -4753,11 +4819,18 @@
     }, 
     "230003": {
         "desc": "20% boost Rec and max HP", 
+        "effect": [
+            {
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }
+        ], 
         "id": 230003, 
         "max_stack": 1, 
         "name": "Shining Stone", 
         "raid": false, 
-        "rarity": 2, 
+        "rarity": 1, 
         "recipe": {
             "karma": "100000", 
             "materials": [
@@ -4783,15 +4856,28 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_7_2.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230004": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff12\uff15\uff05\u30a2\u30c3\u30d7\uff06\u78ba\u7387\u3067\uff28\uff30\u3092\u5c11\u3057\u5438\u53ce", 
+        "desc": "25% boost to Rec, max HP & probability of slight HP absorption", 
+        "effect": [
+            {
+                "hp% buff": 25, 
+                "passive id": "1", 
+                "rec% buff": 25
+            }, 
+            {
+                "hp drain chance%": 25, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17"
+            }
+        ], 
         "id": 230004, 
         "max_stack": 1, 
-        "name": "\u5c0a\u8840\u7389\u30c7\u30a3\u30e1\u30fc\u30c6", 
+        "name": "Noble Blood Gem", 
         "raid": false, 
-        "rarity": 3, 
+        "rarity": 2, 
         "recipe": {
             "karma": "150000", 
             "materials": [
@@ -4817,13 +4903,32 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_7_1.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230005": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\uff06\u30bf\u30fc\u30f3\u6bce\u306b\uff28\uff30\u3092\u56de\u5fa9\uff06\u88ab\u30c0\u30e1\u30fc\u30b8\u6642\u3001\u78ba\u7387\u3067\uff28\uff30\u3092\u5c11\u3057\u56de\u5fa9", 
+        "desc": "30% boost to Rec and max HP, restores HP each turn & damage taken may slightly restore HP", 
+        "effect": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 700, 
+                "turn heal low": 700
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 15, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24"
+            }
+        ], 
         "id": 230005, 
         "max_stack": 1, 
-        "name": "\u8b83\u5d07\u7b26\u30c9\u30e9\u30b7\u30aa\u30f3", 
+        "name": "Worship Charm", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -4855,15 +4960,25 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_7_8.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230103": {
         "desc": "20% boost to Atk & boosts BB gauge each turn", 
+        "effect": [
+            {
+                "atk% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }
+        ], 
         "id": 230103, 
         "max_stack": 1, 
         "name": "Sacred Flag", 
         "raid": false, 
-        "rarity": 2, 
+        "rarity": 1, 
         "recipe": {
             "karma": "100000", 
             "materials": [
@@ -4889,15 +5004,29 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_9_2.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230104": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u653b\u6483\u529b\u3092\uff12\uff15\uff05\u30a2\u30c3\u30d7\uff06\u30bf\u30fc\u30f3\u6bce\u306b\uff22\uff22\u30b2\u30fc\u30b8\u3092\u5897\u52a0\uff06\u30b9\u30d1\u30fc\u30af\u30c0\u30e1\u30fc\u30b8\u3092\uff15\uff10\uff05\u30a2\u30c3\u30d7", 
+        "desc": "25% boost to Atk, boosts BB gauge each turn & 50% boost to Spark damage", 
+        "effect": [
+            {
+                "atk% buff": 25, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }
+        ], 
         "id": 230104, 
         "max_stack": 1, 
-        "name": "\u529b\u738b\u5e2f\u30d0\u30eb\u30ae\u30eb\u30a2", 
+        "name": "Power Girdle", 
         "raid": false, 
-        "rarity": 3, 
+        "rarity": 2, 
         "recipe": {
             "karma": "150000", 
             "materials": [
@@ -4923,13 +5052,27 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_9_5.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230105": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u653b\u6483\u529b\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\uff06\u30bf\u30fc\u30f3\u6bce\u306b\uff22\uff22\u30b2\u30fc\u30b8\u3092\u304b\u306a\u308a\u5897\u52a0\uff06\u30b9\u30d1\u30fc\u30af\u30c0\u30e1\u30fc\u30b8\u3092\uff17\uff15\uff05\u30a2\u30c3\u30d7", 
+        "desc": "30% boost to Atk, considerably boosts BB gauge each turn & 75% boost to Spark damage", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }, 
+            {
+                "damage% for spark": 75, 
+                "passive id": "31"
+            }
+        ], 
         "id": 230105, 
         "max_stack": 1, 
-        "name": "\u7981\u95d8\u5263\u30b5\u30d5\u30a9\u30eb\u30b9", 
+        "name": "Forbidden Blade", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -4961,15 +5104,30 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_9_3.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230203": {
         "desc": "20% boost to Def & deters status ailments", 
+        "effect": [
+            {
+                "def% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 50, 
+                "injury resist%": 50, 
+                "paralysis resist%": 50, 
+                "passive id": "4", 
+                "poison resist%": 50, 
+                "sick resist%": 50, 
+                "weaken resist%": 50
+            }
+        ], 
         "id": 230203, 
         "max_stack": 1, 
         "name": "Guarding Light", 
         "raid": false, 
-        "rarity": 2, 
+        "rarity": 1, 
         "recipe": {
             "karma": "100000", 
             "materials": [
@@ -4995,15 +5153,35 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_6_2.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230204": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u9632\u5fa1\u529b\u3092\uff12\uff15\uff05\u30a2\u30c3\u30d7\uff06\u5168\u72b6\u614b\u7570\u5e38\u306b\u304b\u304b\u308a\u306b\u304f\u304f\u306a\u308b\uff06\u5f31\u70b9\u5c5e\u6027\u30c0\u30e1\u30fc\u30b8\u3092\u5c11\u3057\u8efd\u6e1b", 
+        "desc": "25% boost to Def, increases resistance to all status ailments & slightly reduces elemental damage", 
+        "effect": [
+            {
+                "def% buff": 25, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 50, 
+                "injury resist%": 50, 
+                "paralysis resist%": 50, 
+                "passive id": "4", 
+                "poison resist%": 50, 
+                "sick resist%": 50, 
+                "weaken resist%": 50
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 20, 
+                "strong buffed element damage resist%": 20
+            }
+        ], 
         "id": 230204, 
         "max_stack": 1, 
-        "name": "\u767d\u9b3c\u7532\u30de\u30af\u30fb\u30de\u30a6", 
+        "name": "Ogre Gauntlets", 
         "raid": false, 
-        "rarity": 3, 
+        "rarity": 2, 
         "recipe": {
             "karma": "150000", 
             "materials": [
@@ -5029,13 +5207,33 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_6_5.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230205": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u9632\u5fa1\u529b\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\uff06\u5168\u72b6\u614b\u7570\u5e38\u3092\u7121\u52b9\uff06\u5f31\u70b9\u5c5e\u6027\u30c0\u30e1\u30fc\u30b8\u3092\u8efd\u6e1b", 
+        "desc": "30% boost to Def, negates all status ailments & reduces elemental damage", 
+        "effect": [
+            {
+                "def% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 30, 
+                "strong buffed element damage resist%": 30
+            }
+        ], 
         "id": 230205, 
         "max_stack": 1, 
-        "name": "\u9ed2\u5996\u515c\u30d8\u30eb\u30fb\u30af\u30eb", 
+        "name": "Myrmidon Helm", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -5067,15 +5265,29 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_6_6.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230303": {
         "desc": "Restores HP each turn & damage taken may restore HP", 
+        "effect": [
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 500, 
+                "turn heal low": 500
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 15, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24"
+            }
+        ], 
         "id": 230303, 
         "max_stack": 1, 
         "name": "General's Gem", 
         "raid": false, 
-        "rarity": 2, 
+        "rarity": 1, 
         "recipe": {
             "karma": "100000", 
             "materials": [
@@ -5101,15 +5313,34 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_8_2.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230304": {
-        "desc": "\u30bf\u30fc\u30f3\u6bce\u306b\uff28\uff30\u3092\u56de\u5fa9\uff06\u88ab\u30c0\u30e1\u30fc\u30b8\u6642\u3001\u78ba\u7387\u3067\uff28\uff30\u3092\u5c11\u3057\u56de\u5fa9\uff06\uff22\uff23\u30fb\uff28\uff23\u51fa\u73fe\u7387\u3092\u30a2\u30c3\u30d7", 
+        "desc": "Restores HP each turn, damage taken may slightly restore HP & boosts BC, HC drop rates", 
+        "effect": [
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 500, 
+                "turn heal low": 500
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 15, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24"
+            }, 
+            {
+                "bc drop rate% buff": 10, 
+                "hc drop rate% buff": 10, 
+                "passive id": "19"
+            }
+        ], 
         "id": 230304, 
         "max_stack": 1, 
-        "name": "\u6804\u6148\u7b26\u30dd\u30ea\u30a2\u30d5", 
+        "name": "Affection Charm", 
         "raid": false, 
-        "rarity": 3, 
+        "rarity": 2, 
         "recipe": {
             "karma": "150000", 
             "materials": [
@@ -5139,15 +5370,33 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_8_8.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "234000": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u653b\u6483\u529b\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\uff06\u78ba\u7387\u3067\u5168\u72b6\u614b\u7570\u5e38\u3092\u30e9\u30f3\u30c0\u30e0\u306b\u767a\u751f", 
+        "desc": "30% boost to Atk & probable random status ailment infliction", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "curse%": 5, 
+                "passive id": "20", 
+                "poison%": 5, 
+                "sick%": 7
+            }, 
+            {
+                "injury%": 7, 
+                "paralysis%": 5, 
+                "passive id": "20", 
+                "weaken%": 7
+            }
+        ], 
         "id": 234000, 
         "max_stack": 1, 
-        "name": "\u8056\u51f6\u5178\u30ec\u30cd\u30a4\u30a8", 
+        "name": "Taboo Grimoire", 
         "raid": false, 
-        "rarity": 3, 
+        "rarity": 2, 
         "recipe": {
             "karma": "150000", 
             "materials": [
@@ -5177,15 +5426,36 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_5_6.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "235000": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff12\uff15\uff05\u30a2\u30c3\u30d7\uff06\u88ab\u30c0\u30e1\u30fc\u30b8\u6642\u3001\u78ba\u7387\u3067\uff22\uff22\u30b2\u30fc\u30b8\u3092\u5c11\u3057\u5897\u52a0\uff06\u901a\u5e38\u653b\u6483\u6642\u3001\u78ba\u7387\u3067\uff22\uff22\u30b2\u30fc\u30b8\u3092\u5897\u52a0", 
+        "desc": "25% boost to all parameters, damage taken may slightly boost BB gauge & probable boost to BB gauge when attacking normally", 
+        "effect": [
+            {
+                "atk% buff": 25, 
+                "def% buff": 25, 
+                "hp% buff": 25, 
+                "passive id": "1", 
+                "rec% buff": 25
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 50, 
+                "passive id": "25"
+            }, 
+            {
+                "bc fill when attacking high": 3, 
+                "bc fill when attacking low": 2, 
+                "bc fill when attacking%": 50, 
+                "passive id": "35"
+            }
+        ], 
         "id": 235000, 
         "max_stack": 1, 
-        "name": "\u5929\u72fc\u5957\u30bc\u30d5\u30a3\u30fc\u30ed", 
+        "name": "Lupine Mantle", 
         "raid": false, 
-        "rarity": 4, 
+        "rarity": 3, 
         "recipe": {
             "karma": "200000", 
             "materials": [
@@ -5215,13 +5485,30 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_8_4.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "235001": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff13\uff15\uff05\u30a2\u30c3\u30d7\uff06\u30af\u30ea\u30c6\u30a3\u30ab\u30eb\u30c0\u30e1\u30fc\u30b8\u3092\u5927\u5e45\u306b\u30a2\u30c3\u30d7\uff06\uff22\uff22\u767a\u52d5\u306b\u5fc5\u8981\u306a\uff22\uff22\u30b2\u30fc\u30b8\u91cf\u3092\u8efd\u6e1b", 
+        "desc": "35% boost to all parameters, hugely boosts critical damage & reduces BB gauge required for BB", 
+        "effect": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }
+        ], 
         "id": 235001, 
         "max_stack": 1, 
-        "name": "\u6a5f\u5175\u77f3\u300e\u30a4\u30b6\u30e8\u30a4\u300f", 
+        "name": "Automated Warrior", 
         "raid": false, 
         "rarity": 4, 
         "recipe": {
@@ -5253,13 +5540,30 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_5_1.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "236000": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\uff06\u30b9\u30d1\u30fc\u30af\u6642\u3001\uff22\uff23\u51fa\u73fe\u7387\u3092\u304b\u306a\u308a\u30a2\u30c3\u30d7\uff06\u30b9\u30d1\u30fc\u30af\u6642\u3001\uff22\uff22\u30b2\u30fc\u30b8\u3092\u5c11\u3057\u5897\u52a0", 
+        "desc": "30% boost to Atk and Def & considerably boosts BC drop rate and slightly boosts BB gauge during Spark", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc drop% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 1, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
         "id": 236000, 
         "max_stack": 1, 
-        "name": "\u6804\u795e\u306e\u5fa1\u5149\u9152", 
+        "name": "Ambrosia Wine", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -5287,13 +5591,27 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_9_8.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "237000": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u6700\u5927\uff28\uff30\u3092\uff12\uff15\uff05\u30a2\u30c3\u30d7\uff06\u708e\u30fb\u6c34\u30fb\u6a39\u30fb\u96f7\u5c5e\u6027\u30e6\u30cb\u30c3\u30c8\u304b\u3089\u306e\u88ab\u30c0\u30e1\u30fc\u30b8\u3092\uff11\uff10\uff05\u8efd\u6e1b", 
+        "desc": "25% boost to max HP & 10% damage reduction from Fire, Water, Earth, Thunder types", 
+        "effect": [
+            {
+                "hp% buff": 25, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }
+        ], 
         "id": 237000, 
         "max_stack": 1, 
-        "name": "\u8056\u795e\u970a\u306e\u67f4\u706f", 
+        "name": "Holy Beacon", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -5325,7 +5643,7 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_6_1.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "30000": {
         "desc": "Boosts Atk by 5%", 
@@ -16744,6 +17062,46 @@
         "thumbnail": "sphere_thum_1_1.png", 
         "type": "sphere"
     }, 
+    "47213": {
+        "desc": "Restores HP each turn, boosts BB gauge at each turn's start, 30% boost to Atk, max HP, hugely boosts BB Atk, considerably boosts BB Atk when HP is over 50% & damage taken may restore HP", 
+        "effect": [
+            {
+                "unknown passive id": "72", 
+                "unknown passive params": "1,1"
+            }, 
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "passive id": "64", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }, 
+            {
+                "unknown passive id": "103", 
+                "unknown passive params": "100,100,100,50,1"
+            }
+        ], 
+        "id": 47213, 
+        "max_stack": 1, 
+        "name": "Holy Lineage Blade", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
     "47300": {
         "desc": "10% boost to max HP and Rec & slightly boosts critical damage", 
         "effect": [
@@ -18360,6 +18718,46 @@
         "sell_price": 10000, 
         "sphere type": 4, 
         "sphere type text": "Status Ailment", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "48224": {
+        "desc": "Greatly restores HP each turn, damage taken may restore HP, 25% boost to Atk, Def, max HP & probable resistance against 1 KO attack", 
+        "effect": [
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 2000, 
+                "turn heal low": 1500
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 20, 
+                "angel idol recover chance% low": 20, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }, 
+            {
+                "atk% buff": 25, 
+                "def% buff": 25, 
+                "hp% buff": 25, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 48224, 
+        "max_stack": 1, 
+        "name": "Blossom Device", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 7, 
+        "sphere type text": "HP Recovery", 
         "thumbnail": "sphere_thum_5_2.png", 
         "type": "sphere"
     }, 
@@ -21776,6 +22174,146 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_1_5.png", 
+        "type": "sphere"
+    }, 
+    "62170": {
+        "desc": "Negates elemental damage and Def ignoring effects, 10% damage reduction & hugely boosts Def when HP is low", 
+        "effect": [
+            {
+                "buff proportional to hp": "lost", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46"
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }, 
+            {
+                "dmg% mitigation": 10, 
+                "passive id": "8"
+            }
+        ], 
+        "id": 62170, 
+        "max_stack": 1, 
+        "name": "Dauntless Shield", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_3_4.png", 
+        "type": "sphere"
+    }, 
+    "62180": {
+        "desc": "50% boost to all parameters, slight BB gauge reduction required for BB, damage taken boosts BB gauge & boosts BB gauge each turn", 
+        "effect": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 10
+            }
+        ], 
+        "id": 62180, 
+        "max_stack": 1, 
+        "name": "Anathema Tome", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_5_6.png", 
+        "type": "sphere"
+    }, 
+    "62190": {
+        "desc": "Boosts BB and SBB activation rates, 100% boost to Atk, boosts BB Atk & damage taken boosts BB gauge", 
+        "effect": [
+            {
+                "atk% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "unknown passive id": "111", 
+                "unknown passive params": "10"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "bb atk% buff": 50, 
+                "passive id": "64", 
+                "sbb atk% buff": 50, 
+                "ubb atk% buff": 50
+            }
+        ], 
+        "id": 62190, 
+        "max_stack": 1, 
+        "name": "Hero's Salvation", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_2_1.png", 
+        "type": "sphere"
+    }, 
+    "62200": {
+        "desc": "40% boost to Def, max HP, considerably boosts Atk, Def, Rec when BB gauge is over 50%, boosts BB gauge at each turn's start & reduces BB gauge required for BB", 
+        "effect": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "unknown passive id": "72", 
+                "unknown passive params": "0,1"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "atk% buff": 75, 
+                "bb gauge above % buff requirement": 50, 
+                "def% buff": 75, 
+                "passive id": "30", 
+                "rec% buff": 75
+            }
+        ], 
+        "id": 62200, 
+        "max_stack": 1, 
+        "name": "Imperial Savior", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_3_6.png", 
         "type": "sphere"
     }, 
     "63000": {
@@ -25613,8 +26151,13 @@
                 "passive id": "1"
             }, 
             {
-                "unknown passive id": "90", 
-                "unknown passive params": "25,25,25,25,25,25,3"
+                "inflict curse%": 25, 
+                "inflict injury%": 25, 
+                "inflict paralysis%": 25, 
+                "inflict poison%": 25, 
+                "inflict sick%": 25, 
+                "inflict weaken%": 25, 
+                "passive id": "90"
             }
         ], 
         "id": 818942, 
@@ -25640,8 +26183,13 @@
                 "passive id": "1"
             }, 
             {
-                "unknown passive id": "90", 
-                "unknown passive params": "30,30,30,30,30,30,3"
+                "inflict curse%": 30, 
+                "inflict injury%": 30, 
+                "inflict paralysis%": 30, 
+                "inflict poison%": 30, 
+                "inflict sick%": 30, 
+                "inflict weaken%": 30, 
+                "passive id": "90"
             }, 
             {
                 "atk% buff when enemy has ailment": 25, 
@@ -25698,8 +26246,13 @@
                 "passive id": "1"
             }, 
             {
-                "unknown passive id": "90", 
-                "unknown passive params": "35,35,35,35,35,35,3"
+                "inflict curse%": 35, 
+                "inflict injury%": 35, 
+                "inflict paralysis%": 35, 
+                "inflict poison%": 35, 
+                "inflict sick%": 35, 
+                "inflict weaken%": 35, 
+                "passive id": "90"
             }, 
             {
                 "atk% buff when enemy has ailment": 50, 
@@ -28551,6 +29104,888 @@
         "sphere type": 2, 
         "sphere type text": "Critical", 
         "thumbnail": "sphere_thum_819007.png", 
+        "type": "sphere"
+    }, 
+    "819008": {
+        "desc": "30% boost to all parameters of Fire types & damage taken may boost BB gauge<br>Guild Raid: 5% damage reduction from Earth Element types", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill when attacked high": 1, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 50, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 819008, 
+        "max_stack": 1, 
+        "name": "Pyre Orb", 
+        "raid": true, 
+        "rarity": 4, 
+        "sell_price": 5000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819008.png", 
+        "type": "sphere"
+    }, 
+    "819009": {
+        "desc": "35% boost to all parameters of Fire types, damage taken boosts BB gauge & boosts Fire elemental damage<br>Guild Raid: 5% boost to all parameters of Fire types & 5% damage reduction from Earth Element types", 
+        "effect": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 35, 
+                "passive id": "2", 
+                "rec% buff": 35
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }
+        ], 
+        "id": 819009, 
+        "max_stack": 1, 
+        "name": "Pyrespark Orb", 
+        "raid": true, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "85000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819008
+                }, 
+                {
+                    "count": 14, 
+                    "id": 880240
+                }, 
+                {
+                    "count": 9, 
+                    "id": 880241
+                }
+            ]
+        }, 
+        "sell_price": 7500, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819009.png", 
+        "type": "sphere"
+    }, 
+    "819010": {
+        "desc": "45% boost to all parameters of Fire types, damage taken boosts BB gauge, boosts Fire elemental damage & damage taken may restore HP<br>Guild Raid: 10% boost to all parameters of Fire types & 10% damage reduction from Earth Element types", 
+        "effect": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 45, 
+                "passive id": "2", 
+                "rec% buff": 45
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 819010, 
+        "max_stack": 1, 
+        "name": "Pyre Essence Orb", 
+        "raid": true, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819009
+                }, 
+                {
+                    "count": 12, 
+                    "id": 880241
+                }, 
+                {
+                    "count": 7, 
+                    "id": 880242
+                }, 
+                {
+                    "count": 1, 
+                    "id": 880243
+                }
+            ]
+        }, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819010.png", 
+        "type": "sphere"
+    }, 
+    "819011": {
+        "desc": "30% boost to all parameters of Water types & damage taken may boost BB gauge<br>Guild Raid: 5% damage reduction from Fire types", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill when attacked high": 1, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 50, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 819011, 
+        "max_stack": 1, 
+        "name": "Tide Orb", 
+        "raid": true, 
+        "rarity": 4, 
+        "sell_price": 5000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819011.png", 
+        "type": "sphere"
+    }, 
+    "819012": {
+        "desc": "35% boost to all parameters of Water types, damage taken boosts BB gauge & boosts Water elemental damage<br>Guild Raid: 5% boost to all parameters of Water types & 5% damage reduction from Fire types", 
+        "effect": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 35, 
+                "passive id": "2", 
+                "rec% buff": 35
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": 819012, 
+        "max_stack": 1, 
+        "name": "Tidewater Orb", 
+        "raid": true, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "85000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819011
+                }, 
+                {
+                    "count": 14, 
+                    "id": 880242
+                }, 
+                {
+                    "count": 9, 
+                    "id": 880239
+                }
+            ]
+        }, 
+        "sell_price": 7500, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819012.png", 
+        "type": "sphere"
+    }, 
+    "819013": {
+        "desc": "45% boost to all parameters of Water types, damage taken boosts BB gauge, boosts Water elemental damage & damage taken may restore HP<br>Guild Raid: 10% boost to all parameters of Water types & 10% damage reduction from Fire types", 
+        "effect": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 45, 
+                "passive id": "2", 
+                "rec% buff": 45
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 819013, 
+        "max_stack": 1, 
+        "name": "Tidal Essence Orb", 
+        "raid": true, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819012
+                }, 
+                {
+                    "count": 12, 
+                    "id": 880239
+                }, 
+                {
+                    "count": 7, 
+                    "id": 880240
+                }, 
+                {
+                    "count": 1, 
+                    "id": 880243
+                }
+            ]
+        }, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819013.png", 
+        "type": "sphere"
+    }, 
+    "819014": {
+        "desc": "30% boost to all parameters of Earth types & damage taken may boost BB gauge<br>Guild Raid: 5% damage reduction from Thunder types", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill when attacked high": 1, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 50, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 819014, 
+        "max_stack": 1, 
+        "name": "Forest Orb", 
+        "raid": true, 
+        "rarity": 4, 
+        "sell_price": 5000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819014.png", 
+        "type": "sphere"
+    }, 
+    "819015": {
+        "desc": "35% boost to all parameters of Earth types, damage taken boosts BB gauge & boosts Earth elemental damage<br>Guild Raid: 5% boost to all parameters of Earth types & 5% damage reduction from Thunder types", 
+        "effect": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 35, 
+                "passive id": "2", 
+                "rec% buff": 35
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50"
+            }
+        ], 
+        "id": 819015, 
+        "max_stack": 1, 
+        "name": "Forestseed Orb", 
+        "raid": true, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "85000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819014
+                }, 
+                {
+                    "count": 14, 
+                    "id": 880239
+                }, 
+                {
+                    "count": 9, 
+                    "id": 880240
+                }
+            ]
+        }, 
+        "sell_price": 7500, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819015.png", 
+        "type": "sphere"
+    }, 
+    "819016": {
+        "desc": "45% boost to all parameters of Earth types, damage taken boosts BB gauge, boosts Earth elemental damage & damage taken may restore HP<br>Guild Raid: 10% boost to all parameters of Earth types & 10% damage reduction from Thunder types", 
+        "effect": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 45, 
+                "passive id": "2", 
+                "rec% buff": 45
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 819016, 
+        "max_stack": 1, 
+        "name": "Forest Essence Orb", 
+        "raid": true, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819015
+                }, 
+                {
+                    "count": 12, 
+                    "id": 880240
+                }, 
+                {
+                    "count": 7, 
+                    "id": 880242
+                }, 
+                {
+                    "count": 1, 
+                    "id": 880243
+                }
+            ]
+        }, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819016.png", 
+        "type": "sphere"
+    }, 
+    "819017": {
+        "desc": "30% boost to all parameters of Thunder types & damage taken may boost BB gauge<br>Guild Raid: 5% damage reduction from Water types", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill when attacked high": 1, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 50, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 819017, 
+        "max_stack": 1, 
+        "name": "Storm Orb", 
+        "raid": true, 
+        "rarity": 4, 
+        "sell_price": 5000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819017.png", 
+        "type": "sphere"
+    }, 
+    "819018": {
+        "desc": "35% boost to all parameters of Thunder types, damage taken boosts BB gauge & boosts Thunder elemental damage<br>Guild Raid: 5% boost to all parameters of Thunder types & 5% damage reduction from Water types", 
+        "effect": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 35, 
+                "passive id": "2", 
+                "rec% buff": 35
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": 819018, 
+        "max_stack": 1, 
+        "name": "Stormstrike Orb", 
+        "raid": true, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "85000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819017
+                }, 
+                {
+                    "count": 14, 
+                    "id": 880242
+                }, 
+                {
+                    "count": 9, 
+                    "id": 880241
+                }
+            ]
+        }, 
+        "sell_price": 7500, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819018.png", 
+        "type": "sphere"
+    }, 
+    "819019": {
+        "desc": "45% boost to all parameters of Thunder types, damage taken boosts BB gauge, boosts Thunder elemental damage & damage taken may restore HP<br>Guild Raid: 10% boost to all parameters of Thunder types & 10% damage reduction from Water types", 
+        "effect": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 45, 
+                "passive id": "2", 
+                "rec% buff": 45
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 819019, 
+        "max_stack": 1, 
+        "name": "Storm Essence Orb", 
+        "raid": true, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819018
+                }, 
+                {
+                    "count": 12, 
+                    "id": 880241
+                }, 
+                {
+                    "count": 7, 
+                    "id": 880239
+                }, 
+                {
+                    "count": 1, 
+                    "id": 880243
+                }
+            ]
+        }, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819019.png", 
+        "type": "sphere"
+    }, 
+    "819020": {
+        "desc": "30% boost to all parameters of Light types & damage taken may boost BB gauge<br>Guild Raid: 5% damage reduction from Dark types", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill when attacked high": 1, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 50, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 819020, 
+        "max_stack": 1, 
+        "name": "Solar Orb", 
+        "raid": true, 
+        "rarity": 4, 
+        "sell_price": 5000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819020.png", 
+        "type": "sphere"
+    }, 
+    "819021": {
+        "desc": "35% boost to all parameters of Light types, damage taken boosts BB gauge & boosts Light elemental damage<br>Guild Raid: 5% boost to all parameters of Light types & 5% damage reduction from Dark types", 
+        "effect": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 35, 
+                "passive id": "2", 
+                "rec% buff": 35
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "elemental weakness multiplier%": 50.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }
+        ], 
+        "id": 819021, 
+        "max_stack": 1, 
+        "name": "Solarflare Orb", 
+        "raid": true, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "85000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819020
+                }, 
+                {
+                    "count": 14, 
+                    "id": 880240
+                }, 
+                {
+                    "count": 9, 
+                    "id": 880242
+                }
+            ]
+        }, 
+        "sell_price": 7500, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819021.png", 
+        "type": "sphere"
+    }, 
+    "819022": {
+        "desc": "45% boost to all parameters of Light types, damage taken boosts BB gauge, boosts Light elemental damage & damage taken may restore HP<br>Guild Raid: 10% boost to all parameters of Light types & 10% damage reduction from Dark types", 
+        "effect": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 45, 
+                "passive id": "2", 
+                "rec% buff": 45
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "elemental weakness multiplier%": 100.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 819022, 
+        "max_stack": 1, 
+        "name": "Solar Essence Orb", 
+        "raid": true, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819021
+                }, 
+                {
+                    "count": 12, 
+                    "id": 880242
+                }, 
+                {
+                    "count": 7, 
+                    "id": 880239
+                }, 
+                {
+                    "count": 1, 
+                    "id": 880243
+                }
+            ]
+        }, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819022.png", 
+        "type": "sphere"
+    }, 
+    "819023": {
+        "desc": "30% boost to all parameters of Dark types & damage taken may boost BB gauge<br>Guild Raid: 5% damage reduction from Light types", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill when attacked high": 1, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 50, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 819023, 
+        "max_stack": 1, 
+        "name": "Lunar Orb", 
+        "raid": true, 
+        "rarity": 4, 
+        "sell_price": 5000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819023.png", 
+        "type": "sphere"
+    }, 
+    "819024": {
+        "desc": "35% boost to all parameters of Dark types, damage taken boosts BB gauge & boosts Dark elemental damage<br>Guild Raid: 5% boost to all parameters of Dark types & 5% damage reduction from Light types", 
+        "effect": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 35, 
+                "passive id": "2", 
+                "rec% buff": 35
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50"
+            }
+        ], 
+        "id": 819024, 
+        "max_stack": 1, 
+        "name": "Lunarshadow Orb", 
+        "raid": true, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "85000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819023
+                }, 
+                {
+                    "count": 14, 
+                    "id": 880239
+                }, 
+                {
+                    "count": 9, 
+                    "id": 880241
+                }
+            ]
+        }, 
+        "sell_price": 7500, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819024.png", 
+        "type": "sphere"
+    }, 
+    "819025": {
+        "desc": "45% boost to all parameters of Dark types, damage taken boosts BB gauge, boosts Dark elemental damage & damage taken may restore HP<br>Guild Raid: 10% boost to all parameters of Dark types & 10% damage reduction from Light types", 
+        "effect": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 45, 
+                "passive id": "2", 
+                "rec% buff": 45
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 819025, 
+        "max_stack": 1, 
+        "name": "Lunar Essence Orb", 
+        "raid": true, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819024
+                }, 
+                {
+                    "count": 12, 
+                    "id": 880241
+                }, 
+                {
+                    "count": 7, 
+                    "id": 880240
+                }, 
+                {
+                    "count": 1, 
+                    "id": 880243
+                }
+            ]
+        }, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819025.png", 
         "type": "sphere"
     }, 
     "819901": {
