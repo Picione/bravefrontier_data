@@ -17309,7 +17309,7 @@
         "amount": 3000000, 
         "evo": {
             "id": 30927, 
-            "name": "\u7737\u5d6c\u306e\u51b4\u5947\u773c\u30d0\u30ed", 
+            "name": "Bizarre Sight Baro", 
             "rarity": 8
         }, 
         "mats": [
@@ -17354,7 +17354,7 @@
                 "type": "unit"
             }
         ], 
-        "name": "\u773c\u74b0\u5fcc\u30d0\u30ed", 
+        "name": "Watchful Eyes Baro", 
         "rarity": 7
     }, 
     "40011": {
@@ -28827,7 +28827,7 @@
         "amount": 3000000, 
         "evo": {
             "id": 51137, 
-            "name": "\u7a76\u83ef\u306e\u72c2\u92fc\u6a5f\u30a4\u30aa\u30cb\u30a2", 
+            "name": "Metal Flower Ionia", 
             "rarity": 8
         }, 
         "mats": [
@@ -28872,7 +28872,7 @@
                 "type": "unit"
             }
         ], 
-        "name": "\u68b0\u72c2\u5fcc\u30a4\u30aa\u30cb\u30a2", 
+        "name": "Tech Craze Ionia", 
         "rarity": 7
     }, 
     "51166": {
@@ -34904,7 +34904,7 @@
         "amount": 3000000, 
         "evo": {
             "id": 61097, 
-            "name": "\u51f6\u7149\u306e\u5341\u5fcc\u5e1d\u30b7\u30aa\u30f3", 
+            "name": "Disnomian Emperor Shion", 
             "rarity": 8
         }, 
         "mats": [
@@ -34949,7 +34949,7 @@
                 "type": "unit"
             }
         ], 
-        "name": "\u9b41\u738b\u5fcc\u30b7\u30aa\u30f3", 
+        "name": "Pioneering Leader Shion", 
         "rarity": 7
     }, 
     "810003": {
