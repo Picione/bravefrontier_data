@@ -4684,6 +4684,23 @@
         "name": "Trust Beyond Species", 
         "target": "self"
     }, 
+    "1030000": {
+        "desc": "25% boost to all parameters", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "hp% buff": 25, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "id": "1030000", 
+        "name": "World Records", 
+        "target": "self"
+    }, 
     "10400": {
         "desc": "Adds status ailment removal effect to BB/SBB", 
         "effects": [
@@ -9944,6 +9961,80 @@
         "name": "Force of Utter Destruction", 
         "target": "self"
     }, 
+    "30100": {
+        "desc": "Hugely boosts elemental damage, 50% boost to Spark damage, considerably boosts critical damage & probable 15% damage counter", 
+        "effects": [
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 125.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 25, 
+                "dmg% reflect high": 15, 
+                "dmg% reflect low": 15, 
+                "passive id": "26", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "30100", 
+        "name": "Dark Wings", 
+        "target": "self"
+    }, 
+    "30200": {
+        "desc": "30% boost to all parameters when Sin of Rebellion is equipped, slight HP absorption & damage taken may restore HP", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47207"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 8, 
+                "hp drain% low": 5, 
+                "passive id": "17", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "30200", 
+        "name": "Preserver's Will", 
+        "target": "self"
+    }, 
     "30300": {
         "desc": "Slight boost to Atk, Def when BB gauge is over 50% & 30% boost to Spark damage", 
         "effects": [
@@ -10663,6 +10754,32 @@
         ], 
         "id": "36800", 
         "name": "Lightning the Argent", 
+        "target": "self"
+    }, 
+    "36900": {
+        "desc": "Negates all status ailments & probable 15% damage reduction", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "dmg reduction chance%": 10, 
+                "dmg reduction%": 15, 
+                "passive id": "14", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36900", 
+        "name": "Match Made in Heaven", 
         "target": "self"
     }, 
     "3700": {
@@ -12037,6 +12154,267 @@
         "name": "Mirror Gift of Chastity", 
         "target": "self"
     }, 
+    "7000023": {
+        "desc": "5% boost to all parameters of Water or Dark units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "water", 
+                    "dark"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000023", 
+        "name": "Mirror Gift of Patience", 
+        "target": "self"
+    }, 
+    "7000024": {
+        "desc": "5% boost to all parameters of Earth or Thunder units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "earth", 
+                    "thunder"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000024", 
+        "name": "Mirror Gift of Gluttony", 
+        "target": "self"
+    }, 
+    "7000025": {
+        "desc": "5% boost to all parameters of Earth or Light units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "earth", 
+                    "light"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000025", 
+        "name": "Mirror Gift of Sloth", 
+        "target": "self"
+    }, 
+    "7000026": {
+        "desc": "5% boost to all parameters of Earth or Dark units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "earth", 
+                    "dark"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000026", 
+        "name": "Mirror Gift of Diligence", 
+        "target": "self"
+    }, 
+    "7000027": {
+        "desc": "5% boost to all parameters of Thunder or Light units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "thunder", 
+                    "light"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000027", 
+        "name": "Mirror Gift of Humility", 
+        "target": "self"
+    }, 
+    "7000028": {
+        "desc": "5% boost to all parameters of Thunder or Dark units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "thunder", 
+                    "dark"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000028", 
+        "name": "Mirror Gift of Greed", 
+        "target": "self"
+    }, 
+    "7000029": {
+        "desc": "5% boost to all parameters of Light or Dark units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "light", 
+                    "dark"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000029", 
+        "name": "Mirror Gift of Seven", 
+        "target": "self"
+    }, 
+    "7000030": {
+        "desc": "30% boost to all parameters & negates all status ailments", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "7000030", 
+        "name": "Mirror Soul of Protection", 
+        "target": "self"
+    }, 
+    "7000031": {
+        "desc": "30% boost to all parameters & boosts BB gauge when attacked (3 BC)", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "7000031", 
+        "name": "Mirror Soul of Knowledge", 
+        "target": "self"
+    }, 
+    "7000032": {
+        "desc": "30% boost to all parameters & boosts Spark damage (50%)", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "7000032", 
+        "name": "Mirror Soul of Might", 
+        "target": "self"
+    }, 
+    "7000033": {
+        "desc": "35% boost to all parameters & Spark damage boosts BB gauge (1 BC) & negates elemental damage & boosts BB ATK (50%)", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "conditions": [], 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 35
+            }, 
+            {
+                "bc drop% for spark": 100, 
+                "conditions": [], 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "bb atk% buff": 50, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 50, 
+                "ubb atk% buff": 50
+            }
+        ], 
+        "id": "7000033", 
+        "name": "Apex Oracle of Superiority", 
+        "target": "self"
+    }, 
     "7100": {
         "desc": "Adds slight BB gauge boost effect to BB/SBB & negates critical, elemental damage", 
         "effects": [
@@ -12597,7 +12975,8 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041"
+                            "701041", 
+                            "701043"
                         ]
                     }
                 ], 
@@ -12614,7 +12993,8 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041"
+                            "701041", 
+                            "701043"
                         ]
                     }
                 ], 
@@ -12633,7 +13013,8 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041"
+                            "701041", 
+                            "701043"
                         ]
                     }
                 ], 
@@ -12646,7 +13027,8 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041"
+                            "701041", 
+                            "701043"
                         ]
                     }
                 ], 
@@ -14440,6 +14822,97 @@
         "name": "Mindslaver", 
         "target": "self"
     }, 
+    "740237": {
+        "desc": "If an Apex sphere is equipped, boosts all parameters (30% and 10% all), adds probability of resistance against 2 KO attacks and adds Thunder barrier for all allies effect to BB/SBB (3500 HP)", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "angel idol recover hp%": 1, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 0, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "thunder", 
+                        "elemental barrier hp": 3500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "740237", 
+        "name": "Last Survivor", 
+        "target": "self"
+    }, 
     "7500": {
         "desc": "Damage taken slightly boosts BB gauge", 
         "effects": [
@@ -15120,6 +15593,119 @@
         "name": "Rest in Peace", 
         "target": "self"
     }, 
+    "750247": {
+        "desc": "If an Apex sphere is equipped, boosts all parameters (30% and 10% all), boosts elemental damage (75% and 25% all) and adds boosts ATK (170%) for 3 turns to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 25.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 75.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "atk% buff (1)": 170, 
+                        "buff turns": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "750247", 
+        "name": "Eternal Destroyer", 
+        "target": "self"
+    }, 
     "7600": {
         "desc": "Boosts BB attack", 
         "effects": [
@@ -15795,7 +16381,8 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041"
+                            "701041", 
+                            "701043"
                         ]
                     }
                 ], 
@@ -15812,7 +16399,8 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041"
+                            "701041", 
+                            "701043"
                         ]
                     }
                 ], 
@@ -15828,7 +16416,8 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041"
+                            "701041", 
+                            "701043"
                         ]
                     }
                 ], 
@@ -15842,7 +16431,8 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041"
+                            "701041", 
+                            "701043"
                         ]
                     }
                 ], 
@@ -17032,6 +17622,46 @@
         "name": "Arcane Erudition", 
         "target": "self"
     }, 
+    "850377": {
+        "desc": "Boosts Atk, Def when BB gauge is over 50%", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850377", 
+        "name": "White Pumpkin Mansion", 
+        "target": "self"
+    }, 
+    "850378": {
+        "desc": "Boosts Atk, Def when BB gauge is over 50% & considerably boosts BB Atk", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }
+        ], 
+        "id": "850378", 
+        "name": "Empire of 1000 Minions", 
+        "target": "self"
+    }, 
     "850397": {
         "desc": "Nullify ailments & Boosts REC (0-100%) based on remaining HP", 
         "effects": [
@@ -17246,6 +17876,68 @@
         ], 
         "id": "860317", 
         "name": "Kitty of the Shadows", 
+        "target": "self"
+    }, 
+    "860377": {
+        "desc": "Boosts critical damage & negates all status ailments", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "860377", 
+        "name": "Heartless Apocalypse", 
+        "target": "self"
+    }, 
+    "860378": {
+        "desc": "Boosts critical damage, boost Spark damage for all allies, raises Atk parameter limits to 130000 & negates all status ailments", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 20, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "860378", 
+        "name": "Black & White Lucifero", 
         "target": "self"
     }, 
     "8700": {

@@ -6805,8 +6805,186 @@
         "name": "Soothing Anthem", 
         "target": "self"
     }, 
+    "1028100": {
+        "desc": "Adds Def ignoring effect to attack, considerably raises normal hit amount & normal attacks may hit all enemies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 20, 
+                "conditions": [], 
+                "passive id": "96", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1028100", 
+        "name": "Piercing Cry", 
+        "target": "self"
+    }, 
+    "1028200": {
+        "desc": "Boosts elemental damage & 60% boost to Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 60.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1028200", 
+        "name": "Extermination Cut", 
+        "target": "self"
+    }, 
+    "1028300": {
+        "desc": "Hugely boosts BB gauge when guarding & negates critical, elemental damage for 2 turns and enormously reduces Spark damage when activating guard", 
+        "effects": [
+            {
+                "bc filled when attacked while guarded": 6, 
+                "conditions": [], 
+                "passive id": "59", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (143)": "2", 
+                    "unknown buff id": "143", 
+                    "unknown buff params": "100&100&100"
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (144)": "2", 
+                    "unknown buff id": "144", 
+                    "unknown buff params": "100&100"
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (145)": "2", 
+                    "unknown buff id": "145", 
+                    "unknown buff params": "100&100"
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1028300", 
+        "name": "Sacred Shield's Blessing", 
+        "target": "self"
+    }, 
+    "1028400": {
+        "desc": "40% boost to all parameters & negates critical and Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self"
+            }, 
+            {
+                "base spark dmg% resist": 100, 
+                "buff spark dmg% resist": 100, 
+                "conditions": [], 
+                "passive id": "77", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1028400", 
+        "name": "First God's Blessing", 
+        "target": "self"
+    }, 
+    "1028500": {
+        "desc": "Boosts critical hit rate, adds all elements to attack, hugely boosts elemental damage & considerably boosts critical damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "elements added": [
+                    "fire", 
+                    "water", 
+                    "earth", 
+                    "thunder", 
+                    "light", 
+                    "dark"
+                ], 
+                "passive id": "102", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit% buff": 25, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1028500", 
+        "name": "Heroic Spirit's Glory", 
+        "target": "self"
+    }, 
     "1029000": {
-        "desc": "攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆被ダメージが一定数を超える度にＢＢゲージをかなり増加", 
+        "desc": "20% boost to all parameters & considerably boosts BB gauge when damage taken exceeds certain amount", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -6826,11 +7004,11 @@
             }
         ], 
         "id": "1029000", 
-        "name": "魔討の雄絆", 
+        "name": "Demonslayer Bond", 
         "target": "self"
     }, 
     "1029100": {
-        "desc": "攻撃力の上限値（９９９９９）を１５００００まで解放する＆弱点属性ダメージを大幅にアップ", 
+        "desc": "Raises Atk parameter limits to 150000 & hugely boosts elemental damage", 
         "effects": [
             {
                 "conditions": [], 
@@ -6852,11 +7030,11 @@
             }
         ], 
         "id": "1029100", 
-        "name": "魔討の凱誉", 
+        "name": "Demonslayer Honor", 
         "target": "self"
     }, 
     "1029200": {
-        "desc": "攻撃力・最大ＨＰを５０％アップ＆スパークダメージを７５％アップ＆攻撃ＢＢの威力を大幅にアップ", 
+        "desc": "50% boost to Atk, max HP, 75% boost to Spark damage & hugely boosts BB Atk", 
         "effects": [
             {
                 "atk% buff": 50, 
@@ -6881,7 +7059,7 @@
             }
         ], 
         "id": "1029200", 
-        "name": "魔討の真剋", 
+        "name": "Demonslayer Triumph", 
         "target": "self"
     }, 
     "10300": {
@@ -14334,7 +14512,7 @@
         "target": "self"
     }, 
     "34300": {
-        "desc": "残りＨＰが多いほど、攻撃力・防御力をアップ＆スパークダメージを３０％アップ", 
+        "desc": "Boosts Atk, Def relative to remaining HP & 30% boost to Spark damage", 
         "effects": [
             {
                 "atk% base buff": 0, 
@@ -14354,11 +14532,11 @@
             }
         ], 
         "id": "34300", 
-        "name": "海皇神の狂悍", 
+        "name": "Sea God's Savagery", 
         "target": "self"
     }, 
     "34400": {
-        "desc": "残りＨＰが多いほど、攻撃力・防御力をかなりアップ＆スパークダメージを５０％アップ", 
+        "desc": "Considerably boosts Atk, Def relative to remaining HP & 50% boost to Spark damage", 
         "effects": [
             {
                 "atk% base buff": 0, 
@@ -14378,11 +14556,11 @@
             }
         ], 
         "id": "34400", 
-        "name": "混沌の滅海", 
+        "name": "Sea of Chaos", 
         "target": "self"
     }, 
     "34500": {
-        "desc": "スパークダメージを３０％アップ＆クリティカルダメージをアップ", 
+        "desc": "30% boost to Spark damage & boosts critical damage", 
         "effects": [
             {
                 "conditions": [], 
@@ -14398,11 +14576,11 @@
             }
         ], 
         "id": "34500", 
-        "name": "天真の暴雷", 
+        "name": "Sky-Splitter", 
         "target": "self"
     }, 
     "34600": {
-        "desc": "クリティカルダメージをアップ＆スパーク時、ＢＢゲージを超絶増加・ダメージを５０％アップ", 
+        "desc": "Boosts critical damage, Spark damage enormously boosts BB gauge & 50% boost to Spark damage", 
         "effects": [
             {
                 "conditions": [], 
@@ -14426,11 +14604,11 @@
             }
         ], 
         "id": "34600", 
-        "name": "崩界の雷槌", 
+        "name": "Thunder Hammer", 
         "target": "self"
     }, 
     "34700": {
-        "desc": "確率で１回まで戦闘不能を耐える＆被ダメージ時、確率でＨＰを回復", 
+        "desc": "Probable resistance against 1 KO attack & damage taken may restore HP", 
         "effects": [
             {
                 "angel idol chance% condition": 0, 
@@ -14451,11 +14629,11 @@
             }
         ], 
         "id": "34700", 
-        "name": "再臨の密儀", 
+        "name": "Rite of Rebirth", 
         "target": "self"
     }, 
     "34800": {
-        "desc": "確率で１回まで戦闘不能を耐える＆被ダメージ時、確率でＨＰを回復", 
+        "desc": "Probable resistance against 1 KO attack & damage taken may restore HP", 
         "effects": [
             {
                 "angel idol chance% condition": 0, 
@@ -14476,11 +14654,11 @@
             }
         ], 
         "id": "34800", 
-        "name": "誠忠の宿志", 
+        "name": "Eternal Loyalty", 
         "target": "self"
     }, 
     "34900": {
-        "desc": "スパーク時、ＢＢゲージを超絶増加・ダメージを５０％アップ", 
+        "desc": "Spark damage enormously boosts BB gauge & 50% boost to Spark damage", 
         "effects": [
             {
                 "conditions": [], 
@@ -14498,7 +14676,7 @@
             }
         ], 
         "id": "34900", 
-        "name": "竜徒の忠節", 
+        "name": "Draconic Devotion", 
         "target": "self"
     }, 
     "3500": {
@@ -14543,6 +14721,275 @@
         "name": "Demon Puppet's Will", 
         "target": "self"
     }, 
+    "35000": {
+        "desc": "Damage taken may restore HP & restores HP each turn", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 800
+            }
+        ], 
+        "id": "35000", 
+        "name": "Jump for Joy", 
+        "target": "self"
+    }, 
+    "35100": {
+        "desc": "Adds Def ignoring effect for 2 turns to BB/SBB, Spark damage boosts BB gauge & adds probable Spark critical", 
+        "effects": [
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 2, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "100", 
+                "unknown passive params": "20,50"
+            }
+        ], 
+        "id": "35100", 
+        "name": "Edifying Knowledge", 
+        "target": "self"
+    }, 
+    "35200": {
+        "desc": "Boosts Atk, Def when BB gauge is over 50%, hugely boosts damage against status afflicted foes & damage taken boosts BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "35200", 
+        "name": "Demon Tamer Gear", 
+        "target": "self"
+    }, 
+    "35300": {
+        "desc": "Restores HP each turn & damage taken boosts BB gauge", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 800, 
+                "turn heal low": 600
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "35300", 
+        "name": "Scarlet Cataclysm", 
+        "target": "self"
+    }, 
+    "35400": {
+        "desc": "Restores HP each turn & damage taken considerably boosts BB gauge", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 800
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "35400", 
+        "name": "Flawless Precepts", 
+        "target": "self"
+    }, 
+    "35500": {
+        "desc": "Slightly boosts Atk, Def when BB gauge is over 50% & negates all status ailments", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "35500", 
+        "name": "Much Ado About Nothing", 
+        "target": "self"
+    }, 
+    "35600": {
+        "desc": "Boosts Atk, Def when BB gauge is over 50% & negates all status ailments", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "35600", 
+        "name": "Fruitful Life", 
+        "target": "self"
+    }, 
+    "35700": {
+        "desc": "Probable slight Spark vulnerability infliction for 2 turns & slightly reduces BB gauge required for BB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "75", 
+                "passive target": "self", 
+                "spark debuff chance%": 10, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 10
+            }
+        ], 
+        "id": "35700", 
+        "name": "Scheming Snake", 
+        "target": "self"
+    }, 
+    "35800": {
+        "desc": "Probable Spark vulnerability infliction for 2 turns & reduces BB gauge required for BB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "75", 
+                "passive target": "self", 
+                "spark debuff chance%": 10, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 25
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 20
+            }
+        ], 
+        "id": "35800", 
+        "name": "Treacherous Serpent", 
+        "target": "self"
+    }, 
+    "35900": {
+        "desc": "Damage taken slightly boosts BB gauge and may restore HP", 
+        "effects": [
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "35900", 
+        "name": "Anathemic Fascination", 
+        "target": "self"
+    }, 
     "3600": {
         "desc": "Negates enemies' element based damage & probable damage reduction to 1", 
         "effects": [
@@ -14562,6 +15009,243 @@
         ], 
         "id": "3600", 
         "name": "Existent World", 
+        "target": "self"
+    }, 
+    "36000": {
+        "desc": "Damage taken boosts BB gauge and may restore HP", 
+        "effects": [
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36000", 
+        "name": "Critical Mission", 
+        "target": "self"
+    }, 
+    "36100": {
+        "desc": "Boosts elemental and critical damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36100", 
+        "name": "Suicidal Research", 
+        "target": "self"
+    }, 
+    "36200": {
+        "desc": "Considerably boosts elemental and critical damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 80.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36200", 
+        "name": "Ruinous Truth", 
+        "target": "self"
+    }, 
+    "36300": {
+        "desc": "30% boost to all parameters when Reeze's Armor is equipped & adds huge BB gauge boost effect to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47206"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge": 8, 
+                        "proc id": "31", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "36300", 
+        "name": "Undying Devotion", 
+        "target": "self"
+    }, 
+    "36400": {
+        "desc": "Boosts elemental damage, enormously boosts OD gauge fill rate & probable random status ailment counter", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 50, 
+                "passive id": "70", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "counter inflict curse%": 10, 
+                "counter inflict injury%": 12, 
+                "counter inflict paralysis%": 10, 
+                "counter inflict poison%": 10, 
+                "counter inflict sick%": 12, 
+                "counter inflict weaken%": 12, 
+                "passive id": "71", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36400", 
+        "name": "Dark Obsession", 
+        "target": "self"
+    }, 
+    "36500": {
+        "desc": "40% boost to all parameters when Medblare is equipped, adds huge boost to damage against status afflicted foes for 3 turns effect to BB/SBB & raises max Atk value from 99999 to 150000", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "49940"
+                        ]
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "atk% buff turns (110)": 3, 
+                        "atk% buff when enemy has ailment": 180, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "65", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "150000"
+            }
+        ], 
+        "id": "36500", 
+        "name": "Unbroken Win Streak", 
+        "target": "self"
+    }, 
+    "36600": {
+        "desc": "30% boost to all parameters when Ishrion is equipped, adds enormous BB gauge boost for 3 turns effect to BB/SBB, damage taken may restore HP & raises max Atk value from 99999 to 130000", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "45000"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge gradual": 9, 
+                        "increase bb gauge gradual turns (37)": 3, 
+                        "proc id": "19", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36600", 
+        "name": "Disciplined Thinking", 
         "target": "self"
     }, 
     "36700": {

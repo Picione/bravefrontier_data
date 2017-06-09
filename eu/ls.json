@@ -885,6 +885,36 @@
         "id": "10135", 
         "name": "Emperor's Just Protector"
     }, 
+    "10136": {
+        "desc": "40% boost to all parameters, considerably boosts BC efficacy, enormously boosts Spark damage for 2 turns when BC collected exceeds certain amount & Spark damage hugely boosts BC drop rate", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "bc drop% for spark": 70, 
+                "passive id": "31"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }, 
+            {
+                "bc receive count buff activation": 20, 
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 120
+                }, 
+                "passive id": "82"
+            }
+        ], 
+        "id": "10136", 
+        "name": "Divine Commander"
+    }, 
     "10137": {
         "desc": "45% boost to all parameters, damage taken boosts BB gauge & restores HP each turn", 
         "effects": [
@@ -1994,6 +2024,39 @@
         ], 
         "id": "12503", 
         "name": "Twinkling Flower"
+    }, 
+    "12518": {
+        "desc": "40% boost to Def, Rec, max HP, negates all status ailments, restores HP each turn & HC collected boosts BB gauge once", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 800
+            }, 
+            {
+                "hc receive count activation": 1, 
+                "increase bb gauge": 4, 
+                "passive id": "85"
+            }
+        ], 
+        "id": "12518", 
+        "name": "Marionette"
     }, 
     "12519": {
         "desc": "40% boost Atk, Def, max HP, 80% boost to Spark damage, reduces BB gauge required for BB & boosts BC efficacy", 
@@ -4414,6 +4477,32 @@
         ], 
         "id": "1952", 
         "name": "Divine Phoenix"
+    }, 
+    "1953": {
+        "desc": "80% boost to Atk, 40% boost to max HP, hugely boosts critical damage, hugely boosts Light, Dark elemental damage & enormously boosts BB Atk when HP is over 50%", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 150.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "unknown passive id": "113", 
+                "unknown passive params": "72,200&200&200,50,1"
+            }
+        ], 
+        "id": "1953", 
+        "name": "Vainglory Blade"
     }, 
     "1954": {
         "desc": "80% boost to Atk, 40% boost to max HP, boosts Atk relative to remaining HP & hugely boosts critical damage", 
@@ -13549,6 +13638,44 @@
         "id": "740227", 
         "name": "Freedom Quiver"
     }, 
+    "740237": {
+        "desc": "Boosts ATK and HP (60%) & boosts critical damage (175%) & critical damage reduces damage (20%) for 2 turns and boosts BB gauge (10 BC) & Spark damage reduction (25%)", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 175.0, 
+                "passive id": "34"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "2", 
+                    "dmg reduction% buff": 20
+                }, 
+                "on crit activation chance%": 100, 
+                "passive id": "89"
+            }, 
+            {
+                "buff": {
+                    "buff turns (77)": "2", 
+                    "unknown buff id": "77", 
+                    "unknown buff params": "10000"
+                }, 
+                "on crit activation chance%": 100, 
+                "passive id": "89"
+            }, 
+            {
+                "base spark dmg% resist": 25, 
+                "buff spark dmg% resist": 0, 
+                "passive id": "77"
+            }
+        ], 
+        "id": "740237", 
+        "name": "Mighty Wanderer"
+    }, 
     "7403": {
         "desc": "30% boost to max HP and Atk of all allies, boosts critical damage & critical damage greatly boosts BB gauge", 
         "effects": [
@@ -16268,6 +16395,36 @@
         ], 
         "id": "750237", 
         "name": "Blessed Alliance"
+    }, 
+    "750247": {
+        "desc": "Boosts all parameters (50%) & boosts Light and Dark elemental damage (150%) & boosts Spark damage (100%) & boosts BB ATK (200%)", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 150.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }
+        ], 
+        "id": "750247", 
+        "name": "Epitaph Eternal"
     }, 
     "7503": {
         "desc": "120% boost to Atk, 60% boost to max HP, boosts EXP gained & adds probable Def ignoring effect", 
@@ -19193,6 +19350,60 @@
         "id": "840378", 
         "name": "Lily of Steel"
     }, 
+    "850377": {
+        "desc": "50% boost to Def, max HP, 5% damage reduction, damage taken boosts BB gauge & negates Def ignoring effects", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg reduction chance%": 100, 
+                "dmg reduction%": 5, 
+                "passive id": "14"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }
+        ], 
+        "id": "850377", 
+        "name": "World-Crossing Half-Aria"
+    }, 
+    "850378": {
+        "desc": "60% boost to Def, max HP, 10% damage reduction, damage taken hugely boosts BB gauge & negates Def ignoring effects", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg reduction chance%": 100, 
+                "dmg reduction%": 10, 
+                "passive id": "14"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }
+        ], 
+        "id": "850378", 
+        "name": "1000 Scales of Juno"
+    }, 
     "8600": {
         "desc": "15% reduction of damage taken from Fire and Earth types", 
         "effects": [
@@ -19239,6 +19450,52 @@
         ], 
         "id": "8602", 
         "name": "Fire Forest's Demolition"
+    }, 
+    "860377": {
+        "desc": "100% boost to Atk, 50% boost to max HP, 110% boost toSpark damage, Spark damage hugely boosts BC drop rates & boosts Atk relative to remaining HP", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bc drop% for spark": 70, 
+                "damage% for spark": 110, 
+                "passive id": "31"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 60, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }
+        ], 
+        "id": "860377", 
+        "name": "Daughter of the Divine Wind"
+    }, 
+    "860378": {
+        "desc": "100% boost to Atk, 60% boost to max HP, 130% boost toSpark damage, Spark damage hugely boosts BC drop rates & boosts Atk relative to remaining HP", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "bc drop% for spark": 80, 
+                "damage% for spark": 130, 
+                "passive id": "31"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }
+        ], 
+        "id": "860378", 
+        "name": "Hurricane of Justice"
     }, 
     "8700": {
         "desc": "15% reduction of damage taken from Water and Fire types", 
@@ -20200,6 +20457,27 @@
         ], 
         "id": "9602", 
         "name": "Shadow God's Anima"
+    }, 
+    "9730": {
+        "desc": "すべてのユニットのクリティカル率がアップ＆クリティカル時、与えるダメージがアップし、確率でＢＢゲージがかなり増加", 
+        "effects": [
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "crit% buff": 10, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill on crit max": 6, 
+                "bc fill on crit min": 4, 
+                "bc fill on crit%": 50.0, 
+                "passive id": "65"
+            }
+        ], 
+        "id": "9730", 
+        "name": "閃断神の鉄刃"
     }, 
     "9750": {
         "desc": "Negates all status ailments, boosts OD gauge fill rate, boosts Atk when damage dealt has exceeded certain amount and hugely boosts Spark damage when Sparks have exceeded certain amount for next turn", 
