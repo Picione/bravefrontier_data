@@ -10715,7 +10715,8 @@
                         ]
                     }, 
                     {
-                        "unknown": "6,3"
+                        "sphere category required": "Drop", 
+                        "sphere category required (raw)": "3"
                     }
                 ], 
                 "def% buff": 30, 
@@ -15498,7 +15499,7 @@
         "target": "self"
     }, 
     "37500": {
-        "desc": "状態異常の敵へのダメージをかなりアップ＆弱点属性ダメージを少しアップ", 
+        "desc": "NA (Serial Code)", 
         "effects": [
             {
                 "atk% buff when enemy has ailment": 80, 
@@ -15521,11 +15522,11 @@
             }
         ], 
         "id": "37500", 
-        "name": "エヴァーモアデリュージョン", 
+        "name": "NA (Serial Code)", 
         "target": "self"
     }, 
     "37600": {
-        "desc": "全状態異常を無効＆確率で１回まで戦闘不能を耐える＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "desc": "Negates all status ailments, probable resistance against 1 KO attack & raises max Atk value from 99999 to 130000", 
         "effects": [
             {
                 "angel idol chance% condition": 0, 
@@ -15555,11 +15556,11 @@
             }
         ], 
         "id": "37600", 
-        "name": "凰武界の封柱", 
+        "name": "Phoenix Seal Axis", 
         "target": "self"
     }, 
     "37700": {
-        "desc": "全状態異常を無効＆確率で１回まで戦闘不能を耐える＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "desc": "Negates all status ailments, probable resistance against 1 KO attack & raises max Atk value from 99999 to 130000", 
         "effects": [
             {
                 "angel idol chance% condition": 0, 
@@ -15589,11 +15590,11 @@
             }
         ], 
         "id": "37700", 
-        "name": "魂喰の獄炎", 
+        "name": "Souleater Sear", 
         "target": "self"
     }, 
     "37800": {
-        "desc": "残りＨＰが多いほど、攻撃力・防御力・回復力を少しアップ＆スパークダメージを６０％アップ＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "desc": "Slightly boosts Atk, Def, Rec relative to remaining HP, 60% boost to Spark damage & raises max Atk value from 99999 to 130000", 
         "effects": [
             {
                 "atk% base buff": 0, 
@@ -15621,11 +15622,11 @@
             }
         ], 
         "id": "37800", 
-        "name": "狼氷界の封柱", 
+        "name": "Frost Seal Axis", 
         "target": "self"
     }, 
     "37900": {
-        "desc": "残りＨＰが多いほど、攻撃力・防御力・回復力をアップ＆スパークダメージを８０％アップ＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "desc": "Boosts Atk, Def, Rec relative to remaining HP, 80% boost to Spark damage & raises max Atk value from 99999 to 130000", 
         "effects": [
             {
                 "atk% base buff": 0, 
@@ -15653,7 +15654,7 @@
             }
         ], 
         "id": "37900", 
-        "name": "揺るぎなき忠牙", 
+        "name": "Unshakable Devotion", 
         "target": "self"
     }, 
     "3800": {
@@ -15671,7 +15672,7 @@
         "target": "self"
     }, 
     "38000": {
-        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力を少しアップ＆ターン毎にＢＢゲージを増加＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "desc": "Slightly boosts Atk, Def when BB gauge is over 50%, boosts BB gauge each turn & raises max Atk value from 99999 to 130000", 
         "effects": [
             {
                 "atk% buff": 30, 
@@ -15695,11 +15696,11 @@
             }
         ], 
         "id": "38000", 
-        "name": "機電界の封柱", 
+        "name": "Machine Seal Axis", 
         "target": "self"
     }, 
     "38100": {
-        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ＆ターン毎にＢＢゲージをかなり増加＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "desc": "Boosts Atk, Def when BB gauge is over 50%, considerably boosts BB gauge each turn & raises max Atk value from 99999 to 130000", 
         "effects": [
             {
                 "atk% buff": 50, 
@@ -15723,11 +15724,11 @@
             }
         ], 
         "id": "38100", 
-        "name": "イクスタスの律動", 
+        "name": "Rhythm of Ecstase", 
         "target": "self"
     }, 
     "38200": {
-        "desc": "「DUELのカケラ」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆ＢＢ及びＳＢＢに「味方全体に３ターン、攻撃に闇属性を付与」を追加＆スパークダメージ５０％アップ", 
+        "desc": "30% boost to Atk, Def, Rec, max HP when Duel Fragment is equipped, adds Dark element to attack for 3 turns effect to BB/SBB & 50% boost to Spark damage", 
         "effects": [
             {
                 "atk% buff": 30, 
@@ -15771,11 +15772,11 @@
             }
         ], 
         "id": "38200", 
-        "name": "未来を掴み取る意志", 
+        "name": "Will and Foresight", 
         "target": "self"
     }, 
     "38300": {
-        "desc": "全状態異常を無効＆クリティカルダメージをアップ＆ＢＢ及びＳＢＢに「味方全体に３ターン、攻撃に炎属性を付与」を追加", 
+        "desc": "Negates all status ailments, boosts critical damage & adds Fire element to attack for 3 turns effect to BB/SBB", 
         "effects": [
             {
                 "conditions": [], 
@@ -15815,7 +15816,7 @@
             }
         ], 
         "id": "38300", 
-        "name": "機械と人との信義", 
+        "name": "Loyal Machine", 
         "target": "self"
     }, 
     "3900": {
@@ -16947,6 +16948,69 @@
         ], 
         "id": "7200", 
         "name": "To the Unlonely", 
+        "target": "self"
+    }, 
+    "720157": {
+        "desc": "Adds status ailment removal effect to BB/SBB, adds 4000HP Water barrier effect to BB/SBB & 25% boost to Def, Rec of Water types", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 25
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "water", 
+                        "elemental barrier hp": 4000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "720157", 
+        "name": "Bubble Mastery", 
         "target": "self"
     }, 
     "7300": {
@@ -19473,6 +19537,81 @@
         "name": "Inevitable Abbatoir Style", 
         "target": "self"
     }, 
+    "820287": {
+        "desc": "30% boost to Atk of Water types & critical damage boosts BB gauge<br>Boosts Atk, Def when BB gauge is over 50% & adds 18 combo powerful Water attack on Fire types effect to SBB in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "elements buffed": [
+                    "water"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "bc fill on crit max": 6, 
+                "bc fill on crit min": 6, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "820287", 
+        "name": "Even Heroes Must Die", 
+        "target": "self"
+    }, 
+    "820288": {
+        "desc": "50% boost to Atk of Water types, critical damage boosts BB gauge, adds Water barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>Boosts Atk, Def when BB gauge is over 50%, adds 26 combo massive Water attack on Fire types effect to SBB & boosts Water elemental damage for all allies in Guild Raid", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "water", 
+                        "elemental barrier hp": 3500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "elements buffed": [
+                    "water"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "bc fill on crit max": 10, 
+                "bc fill on crit min": 10, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "820288", 
+        "name": "The Bitter Price of War", 
+        "target": "self"
+    }, 
     "820317": {
         "desc": "20% boost to all parameters & boosts BB gauge when attacking when Glacies Staff is equipped", 
         "effects": [
@@ -20806,6 +20945,78 @@
         ], 
         "id": "840327", 
         "name": "Unholy Awakening", 
+        "target": "self"
+    }, 
+    "840357": {
+        "desc": "Adds resistance against 1 KO attack when HP is below 20% & negates all status ailments", 
+        "effects": [
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "840357", 
+        "name": "A Guardian Awoken", 
+        "target": "self"
+    }, 
+    "840358": {
+        "desc": "20% boost to all parameters of Thunder types, adds resistance against 1 KO attack when HP is below 20% & negates all status ailments", 
+        "effects": [
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 20, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }
+        ], 
+        "id": "840358", 
+        "name": "A Guardian Reborn", 
         "target": "self"
     }, 
     "840367": {
@@ -22854,7 +23065,7 @@
         "target": "self"
     }, 
     "8910287": {
-        "desc": "MST_EXTRAPASSIVESKILL_8910287_DESCRIPTION", 
+        "desc": "30% boost to Atk of Fire types & negates all status ailments<br>30% boost to Rec of Fire types & adds 22 combo powerful Fire attack on all Earth types effect to SBB in Guild Raid", 
         "effects": [
             {
                 "conditions": [], 
@@ -22882,11 +23093,11 @@
             }
         ], 
         "id": "8910287", 
-        "name": "Forward Unto Victory GR", 
+        "name": "Forward Unto Victory", 
         "target": "self"
     }, 
     "8910288": {
-        "desc": "MST_EXTRAPASSIVESKILL_8910288_DESCRIPTION", 
+        "desc": "50% boost to Atk of Fire types, negates all status ailments, adds Fire barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>50% boost to Rec of Fire types, adds 25 combo powerful Fire attack on Earth types effect to SBB & boosts Fire elemental damage for all allies in Guild Raid", 
         "effects": [
             {
                 "conditions": [], 
@@ -22921,11 +23132,80 @@
             }
         ], 
         "id": "8910288", 
-        "name": "Inexorable March Technique GR", 
+        "name": "Inexorable March Technique", 
+        "target": "self"
+    }, 
+    "8920287": {
+        "desc": "30% boost to Atk of Water types & critical damage boosts BB gauge<br>Boosts Atk, Def when BB gauge is over 50% & adds 18 combo powerful Water attack on Fire types effect to SBB in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "97", 
+                        "unknown proc param": "2,900,100,0,0,0,0"
+                    }
+                ]
+            }
+        ], 
+        "id": "8920287", 
+        "name": "Even Heroes Must Die", 
+        "target": "self"
+    }, 
+    "8920288": {
+        "desc": "50% boost to Atk of Water types, critical damage boosts BB gauge, adds Water barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>Boosts Atk, Def when BB gauge is over 50%, adds 26 combo massive Water attack on Fire types effect to SBB & boosts Water elemental damage for all allies in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 75, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 75, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 25.0, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "97", 
+                        "unknown proc param": "2,1100,100,0,0,0,0"
+                    }
+                ]
+            }
+        ], 
+        "id": "8920288", 
+        "name": "The Bitter Price of War", 
         "target": "self"
     }, 
     "8930287": {
-        "desc": "MST_EXTRAPASSIVESKILL_8930287_DESCRIPTION", 
+        "desc": "30% boost to Atk of Earth types, 80% boost to Atk when BB gauge is over 50%<br>Slightly boosts Atk, Def when HP is over 50% & raises normal hit amount in Guild Raid", 
         "effects": [
             {
                 "atk% buff": 30, 
@@ -22943,11 +23223,11 @@
             }
         ], 
         "id": "8930287", 
-        "name": "Hyper Infovore Technique GR", 
+        "name": "Hyper Infovore Technique", 
         "target": "self"
     }, 
     "8930288": {
-        "desc": "MST_EXTRAPASSIVESKILL_8930288_DESCRIPTION", 
+        "desc": "50% boost to Atk of Earth types, 100% boost to Atk when BB gauge is over 50%, adds Earth barrier effect to BB/SBB & raises Atk parameter limits to 130000<br> 50% boost to Atk, Def when HP is over 50%, raises normal hit amount & boosts Earth elemental damage for all allies in Guild Raid", 
         "effects": [
             {
                 "atk% buff": 50, 
@@ -22972,11 +23252,11 @@
             }
         ], 
         "id": "8930288", 
-        "name": "Ascended Mind Palace GR", 
+        "name": "Ascended Mind Palace", 
         "target": "self"
     }, 
     "8950287": {
-        "desc": "MST_EXTRAPASSIVESKILL_8930287_DESCRIPTION", 
+        "desc": "30% boost to Atk of Light types, enormously boosts Atk relative to remaining HP<br>30% Boost to Atk, Def each turn (3 turns max, capping at 90%) & considerably raises normal hit amount in Guild Raid", 
         "effects": [
             {
                 "atk% max buff": 90, 
@@ -22995,11 +23275,11 @@
             }
         ], 
         "id": "8950287", 
-        "name": "Sniper Speedloader GR", 
+        "name": "Sniper Speedloader", 
         "target": "self"
     }, 
     "8950288": {
-        "desc": "MST_EXTRAPASSIVESKILL_8930288_DESCRIPTION", 
+        "desc": "50% boost to Atk of Light types, greatly boosts Atk relative to remaining HP, adds Light barrier effect to BB/SBB & raises max Atk value from 99999 to 130000<br>40% Boost to Atk, Def each turn (3 turns max, capping at 120%), boosts Light elemental damage for all allies & considerably raises normal hit amount in Guild Raid", 
         "effects": [
             {
                 "atk% max buff": 120, 
@@ -23025,7 +23305,7 @@
             }
         ], 
         "id": "8950288", 
-        "name": "The Ace of Spades GR", 
+        "name": "The Ace of Spades", 
         "target": "self"
     }, 
     "9": {
