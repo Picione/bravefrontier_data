@@ -5193,6 +5193,43 @@
         "name": "Shining Courage Alessa", 
         "rarity": 7
     }, 
+    "10985": {
+        "amount": 1500000, 
+        "evo": {
+            "id": 10986, 
+            "name": "Rain", 
+            "rarity": 7
+        }, 
+        "mats": [
+            {
+                "id": "10354", 
+                "name": "Fire Mecha God", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50354", 
+                "name": "Miracle Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "10133", 
+                "name": "Fire Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "10191", 
+                "name": "Fire Pot", 
+                "type": "unit"
+            }, 
+            {
+                "id": "10191", 
+                "name": "Fire Pot", 
+                "type": "unit"
+            }
+        ], 
+        "name": "Rain", 
+        "rarity": 6
+    }, 
     "10996": {
         "amount": 3000000, 
         "evo": {
@@ -10602,6 +10639,43 @@
         ], 
         "name": "Just Commander Zalts", 
         "rarity": 7
+    }, 
+    "20915": {
+        "amount": 1500000, 
+        "evo": {
+            "id": 20916, 
+            "name": "Lasswell", 
+            "rarity": 7
+        }, 
+        "mats": [
+            {
+                "id": "20344", 
+                "name": "Water Mecha God", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50354", 
+                "name": "Miracle Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "20133", 
+                "name": "Water Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "20191", 
+                "name": "Water Pot", 
+                "type": "unit"
+            }, 
+            {
+                "id": "20191", 
+                "name": "Water Pot", 
+                "type": "unit"
+            }
+        ], 
+        "name": "Lasswell", 
+        "rarity": 6
     }, 
     "20926": {
         "amount": 3000000, 
@@ -26544,6 +26618,43 @@
         "name": "Dawn Emperor Agress", 
         "rarity": 7
     }, 
+    "51075": {
+        "amount": 1500000, 
+        "evo": {
+            "id": 51076, 
+            "name": "Fina", 
+            "rarity": 7
+        }, 
+        "mats": [
+            {
+                "id": "50394", 
+                "name": "Light Mecha God", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50354", 
+                "name": "Miracle Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50123", 
+                "name": "Light Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50191", 
+                "name": "Light Pot", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50191", 
+                "name": "Light Pot", 
+                "type": "unit"
+            }
+        ], 
+        "name": "Fina", 
+        "rarity": 6
+    }, 
     "51086": {
         "amount": 3000000, 
         "evo": {
@@ -33665,6 +33776,58 @@
         "name": "Kula Diamond", 
         "rarity": 7
     }, 
+    "720216": {
+        "amount": 3000000, 
+        "evo": {
+            "id": 720217, 
+            "name": "Bellicose Princess Ninmah", 
+            "rarity": 8
+        }, 
+        "mats": [
+            {
+                "id": "20344", 
+                "name": "Water Mecha God", 
+                "type": "unit"
+            }, 
+            {
+                "id": "20344", 
+                "name": "Water Mecha God", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50354", 
+                "name": "Miracle Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50354", 
+                "name": "Miracle Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "20133", 
+                "name": "Water Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "60224", 
+                "name": "Metal Mimic", 
+                "type": "unit"
+            }, 
+            {
+                "id": "750122", 
+                "name": "Wonder Mirror Idol", 
+                "type": "unit"
+            }, 
+            {
+                "id": "110100", 
+                "name": "Legend Stone", 
+                "type": "item"
+            }
+        ], 
+        "name": "Ninmah, Noblesses' Moon", 
+        "rarity": 7
+    }, 
     "720226": {
         "amount": 3000000, 
         "evo": {
@@ -34324,6 +34487,58 @@
         "name": "Enki, Gladiator of Ur", 
         "rarity": 6
     }, 
+    "730216": {
+        "amount": 3000000, 
+        "evo": {
+            "id": 730217, 
+            "name": "Superior Kaiser Enki", 
+            "rarity": 8
+        }, 
+        "mats": [
+            {
+                "id": "730216", 
+                "name": "Enki, Kingdom Devourer", 
+                "type": "unit"
+            }, 
+            {
+                "id": "730216", 
+                "name": "Enki, Kingdom Devourer", 
+                "type": "unit"
+            }, 
+            {
+                "id": "730215", 
+                "name": "Enki, Gladiator of Ur", 
+                "type": "unit"
+            }, 
+            {
+                "id": "730215", 
+                "name": "Enki, Gladiator of Ur", 
+                "type": "unit"
+            }, 
+            {
+                "id": "730214", 
+                "name": "Enki, Sacred Slave", 
+                "type": "unit"
+            }, 
+            {
+                "id": "730214", 
+                "name": "Enki, Sacred Slave", 
+                "type": "unit"
+            }, 
+            {
+                "id": "701049", 
+                "name": "Primordial Stone", 
+                "type": "item"
+            }, 
+            {
+                "id": "110100", 
+                "name": "Legend Stone", 
+                "type": "item"
+            }
+        ], 
+        "name": "Enki, Kingdom Devourer", 
+        "rarity": 7
+    }, 
     "730226": {
         "amount": 3000000, 
         "evo": {
@@ -34479,6 +34694,58 @@
         ], 
         "name": "Nitro Grog Jake", 
         "rarity": 7
+    }, 
+    "730264": {
+        "amount": 3000000, 
+        "evo": {
+            "id": 730267, 
+            "name": "Bayonet Poetess Emily", 
+            "rarity": 8
+        }, 
+        "mats": [
+            {
+                "id": "30334", 
+                "name": "Earth Mecha God", 
+                "type": "unit"
+            }, 
+            {
+                "id": "30334", 
+                "name": "Earth Mecha God", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50354", 
+                "name": "Miracle Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50354", 
+                "name": "Miracle Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50354", 
+                "name": "Miracle Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "30133", 
+                "name": "Earth Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "60224", 
+                "name": "Metal Mimic", 
+                "type": "unit"
+            }, 
+            {
+                "id": "750122", 
+                "name": "Wonder Mirror Idol", 
+                "type": "unit"
+            }
+        ], 
+        "name": "Patriotic Scholar Emily", 
+        "rarity": 5
     }, 
     "730284": {
         "amount": 500000, 
@@ -39687,6 +39954,58 @@
         ], 
         "name": "Wild Cat Nyami", 
         "rarity": 6
+    }, 
+    "860356": {
+        "amount": 3000000, 
+        "evo": {
+            "id": 860357, 
+            "name": "Midnight Judge Neferet", 
+            "rarity": 8
+        }, 
+        "mats": [
+            {
+                "id": "60344", 
+                "name": "Dark Mecha God", 
+                "type": "unit"
+            }, 
+            {
+                "id": "60344", 
+                "name": "Dark Mecha God", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50354", 
+                "name": "Miracle Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "50354", 
+                "name": "Miracle Totem", 
+                "type": "unit"
+            }, 
+            {
+                "id": "750122", 
+                "name": "Wonder Mirror Idol", 
+                "type": "unit"
+            }, 
+            {
+                "id": "750122", 
+                "name": "Wonder Mirror Idol", 
+                "type": "unit"
+            }, 
+            {
+                "id": "60224", 
+                "name": "Metal Mimic", 
+                "type": "unit"
+            }, 
+            {
+                "id": "110100", 
+                "name": "Legend Stone", 
+                "type": "item"
+            }
+        ], 
+        "name": "Twilight Priestess Neferet", 
+        "rarity": 7
     }, 
     "860377": {
         "amount": 3000000, 
