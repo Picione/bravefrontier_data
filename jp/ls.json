@@ -4124,6 +4124,40 @@
         "id": "12534", 
         "name": "忠戒神の誓謀"
     }, 
+    "12535": {
+        "desc": "全てのユニットの防御力・回復力・最大ＨＰを４０％アップ＆全状態異常を無効＆ターン毎にＨＰをかなり回復＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1200, 
+                "turn heal low": 1000
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }
+        ], 
+        "id": "12535", 
+        "name": "神光聖の耀導"
+    }, 
     "126": {
         "desc": "樹属性ユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ", 
         "effects": [
@@ -7437,6 +7471,58 @@
         ], 
         "id": "1967", 
         "name": "毅崩神鋼の窮鎚"
+    }, 
+    "1968": {
+        "desc": "全てのユニットの攻撃力を１５０％アップ・最大ＨＰを６０％アップ＆残りＨＰが多いほど、攻撃力をアップ＆スパークダメージを１５０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 150, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }
+        ], 
+        "id": "1968", 
+        "name": "星亜神種の轟角"
+    }, 
+    "1969": {
+        "desc": "全てのユニットの攻撃力を１００％アップ・最大ＨＰを４０％アップ＆攻撃ＢＢの威力を超絶アップ＆ＨＰを少し吸収＆被ダメージ時、ＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "hp drain chance%": 100, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }
+        ], 
+        "id": "1969", 
+        "name": "神傀忌の究屍"
     }, 
     "2": {
         "desc": "リーダースキル１説明", 
@@ -13035,6 +13121,30 @@
         ], 
         "id": "4389", 
         "name": "嶄魁神傑の唯継"
+    }, 
+    "4390": {
+        "desc": "全てのユニットの防御力・最大ＨＰを５０％アップ＆ガード時、ＢＢゲージを大幅に増加・ダメージ軽減率をアップ＆被ダメージ時、確率で攻撃力を２ターン低下", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bc filled on guard": 6, 
+                "passive id": "61"
+            }, 
+            {
+                "guard increase mitigation%": 10, 
+                "passive id": "58"
+            }, 
+            {
+                "unknown passive id": "114", 
+                "unknown passive params": "2,-20,-1,15,2"
+            }
+        ], 
+        "id": "4390", 
+        "name": "神雷楯の絆護"
     }, 
     "4400": {
         "desc": "ターン毎にＢＢゲージを少し増加＆全ての状態異常にかなりかかりにくくなる", 
