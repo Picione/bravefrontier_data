@@ -25958,6 +25958,37 @@
         "thumbnail": "item_thum_800104.png", 
         "type": "consumable"
     }, 
+    "800105": {
+        "desc": "MST_ITEMS_BATTLEITEMS_800105_NAME", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "party"
+        }, 
+        "id": 800105, 
+        "max equipped": 0, 
+        "max_stack": 1, 
+        "name": "Scroll of Black Arts", 
+        "raid": false, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "200000", 
+            "materials": [
+                {
+                    "count": 150, 
+                    "id": 801011
+                }
+            ]
+        }, 
+        "sell_price": 500, 
+        "thumbnail": "item_thum_800105.png", 
+        "type": "consumable"
+    }, 
     "800200": {
         "desc": "A pretty snow flake, cool to the touch. Unique event crafting material.", 
         "id": 800200, 
@@ -27317,6 +27348,72 @@
         "rarity": 3, 
         "sell_price": 20, 
         "thumbnail": "item_thum_801005.png", 
+        "type": "material"
+    }, 
+    "801006": {
+        "desc": "MST_ITEMS_MATERIAL_801006_SHORTDESCRIPTION", 
+        "id": 801006, 
+        "max_stack": 99, 
+        "name": "Fire Lacrima", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_801006.png", 
+        "type": "material"
+    }, 
+    "801007": {
+        "desc": "MST_ITEMS_MATERIAL_801007_SHORTDESCRIPTION", 
+        "id": 801007, 
+        "max_stack": 99, 
+        "name": "Water Lacrima", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_801007.png", 
+        "type": "material"
+    }, 
+    "801008": {
+        "desc": "MST_ITEMS_MATERIAL_801008_SHORTDESCRIPTION", 
+        "id": 801008, 
+        "max_stack": 99, 
+        "name": "Earth Lacrima", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_801008.png", 
+        "type": "material"
+    }, 
+    "801009": {
+        "desc": "MST_ITEMS_MATERIAL_801009_SHORTDESCRIPTION", 
+        "id": 801009, 
+        "max_stack": 99, 
+        "name": "Thunder Lacrima", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_801009.png", 
+        "type": "material"
+    }, 
+    "801010": {
+        "desc": "MST_ITEMS_MATERIAL_801010_SHORTDESCRIPTION", 
+        "id": 801010, 
+        "max_stack": 99, 
+        "name": "Light Lacrima", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_801010.png", 
+        "type": "material"
+    }, 
+    "801011": {
+        "desc": "MST_ITEMS_MATERIAL_801011_SHORTDESCRIPTION", 
+        "id": 801011, 
+        "max_stack": 99, 
+        "name": "Dark Lacrima", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_801011.png", 
         "type": "material"
     }, 
     "801101": {
@@ -33939,6 +34036,57 @@
         "thumbnail": "sphere_thum_819104.png", 
         "type": "sphere"
     }, 
+    "819105": {
+        "desc": "Raises Atk parameter limits to 170000, 150% boost to Atk and greatly boosts critical hit rate of Earth types, damage taken restores HP, 150% boost to Spark damage & adds max HP boost for all allies effect to BB/SBB", 
+        "effect": [
+            {
+                "unknown passive id": "143", 
+                "unknown passive params": "170000"
+            }, 
+            {
+                "atk% buff": 150, 
+                "crit% buff": 30, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 100, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "92", 
+                        "unknown proc param": "0,15,0"
+                    }
+                ]
+            }
+        ], 
+        "id": 819105, 
+        "max_stack": 1, 
+        "name": "Terra Wing", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_819105.png", 
+        "type": "sphere"
+    }, 
     "819109": {
         "desc": "Low probability of random status ailment counter & negates all status ailments", 
         "effect": [
@@ -34313,6 +34461,244 @@
         "sphere type": 13, 
         "sphere type text": "Atk Boosting", 
         "thumbnail": "sphere_thum_828002.png", 
+        "type": "sphere"
+    }, 
+    "819116": {
+        "desc": "Raises Atk parameter limits to 150000, 100% boost to Atk and boosts critical hit rate of Earth types, 100% boost to Spark damage & adds boosts own max HP effect to BB/SBB", 
+        "effect": [
+            {
+                "unknown passive id": "143", 
+                "unknown passive params": "150000"
+            }, 
+            {
+                "atk% buff": 100, 
+                "crit% buff": 20, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "single", 
+                        "target type": "self", 
+                        "unknown proc id": "92", 
+                        "unknown proc param": "0,15,0"
+                    }
+                ]
+            }
+        ], 
+        "id": 819116, 
+        "max_stack": 1, 
+        "name": "Shale Wing", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_828002.png", 
+        "type": "sphere"
+    }, 
+    "819120": {
+        "desc": "Restores HP each turn, considerably boosts BB gauge each turn & activates at turn's end effects during turn's start instead", 
+        "effect": [
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1500, 
+                "turn heal low": 1000
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "passive id": "9"
+            }, 
+            {
+                "unknown passive id": "72", 
+                "unknown passive params": "1,1"
+            }
+        ], 
+        "id": 819120, 
+        "max_stack": 1, 
+        "name": "Silver Key", 
+        "raid": false, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "20000", 
+            "materials": [
+                {
+                    "count": 40, 
+                    "id": 801006
+                }, 
+                {
+                    "count": 40, 
+                    "id": 801007
+                }, 
+                {
+                    "count": 15, 
+                    "id": 801008
+                }, 
+                {
+                    "count": 25, 
+                    "id": 801009
+                }, 
+                {
+                    "count": 25, 
+                    "id": 801010
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819120.png", 
+        "type": "sphere"
+    }, 
+    "819121": {
+        "desc": "Greatly boosts elemental damage, considerably restores HP each turn, greatly boosts BB gauge each turn & activates at turn's end effects during turn's start instead", 
+        "effect": [
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 2500, 
+                "turn heal low": 2000
+            }, 
+            {
+                "bc fill per turn": 7, 
+                "passive id": "9"
+            }, 
+            {
+                "unknown passive id": "72", 
+                "unknown passive params": "1,1"
+            }
+        ], 
+        "id": 819121, 
+        "max_stack": 1, 
+        "name": "Gold Key", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "60000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819120
+                }, 
+                {
+                    "count": 60, 
+                    "id": 801006
+                }, 
+                {
+                    "count": 25, 
+                    "id": 801008
+                }, 
+                {
+                    "count": 50, 
+                    "id": 801009
+                }, 
+                {
+                    "count": 50, 
+                    "id": 801010
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819121.png", 
+        "type": "sphere"
+    }, 
+    "819122": {
+        "desc": "Adds all elements to attack, hugely boosts elemental damage, greatly restores HP each turn, enormously boosts BB gauge each turn & activates at turn's end effects during turn's start instead", 
+        "effect": [
+            {
+                "elements added": [
+                    "fire", 
+                    "water", 
+                    "earth", 
+                    "thunder", 
+                    "light", 
+                    "dark"
+                ], 
+                "passive id": "102"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 175.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 4500, 
+                "turn heal low": 3500
+            }, 
+            {
+                "bc fill per turn": 12, 
+                "passive id": "9"
+            }, 
+            {
+                "unknown passive id": "72", 
+                "unknown passive params": "1,1"
+            }
+        ], 
+        "id": 819122, 
+        "max_stack": 1, 
+        "name": "Diamond Key", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "120000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819121
+                }, 
+                {
+                    "count": 80, 
+                    "id": 801006
+                }, 
+                {
+                    "count": 90, 
+                    "id": 801007
+                }, 
+                {
+                    "count": 45, 
+                    "id": 801008
+                }, 
+                {
+                    "count": 85, 
+                    "id": 801009
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819122.png", 
         "type": "sphere"
     }, 
     "819124": {

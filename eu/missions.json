@@ -22110,6 +22110,7 @@
         "land": "Vortex", 
         "mimic_info": {}, 
         "name": "The Beast God", 
+        "requires": "2100000", 
         "xp": 100000, 
         "zel": 3000000
     }, 
@@ -36194,6 +36195,63 @@
         "xp": 3000, 
         "zel": 0
     }, 
+    "8301144": {
+        "area": "Fairy Tail", 
+        "battle_count": 4, 
+        "clear_bonus": [], 
+        "continue": true, 
+        "desc": "Fairy Tail wizards have appeared through an anomaly in the vortex. They seem to think you're with a \"Dark Guild.\" What's going on?!", 
+        "difficulty": 2, 
+        "dungeon": "Fairy Tail", 
+        "energy_use": 15, 
+        "id": "8301144", 
+        "karma": 0, 
+        "land": "Vortex", 
+        "mimic_info": {}, 
+        "name": "Through Fire & Ice", 
+        "xp": 2000, 
+        "zel": 0
+    }, 
+    "8301145": {
+        "area": "Fairy Tail", 
+        "battle_count": 4, 
+        "clear_bonus": [], 
+        "continue": true, 
+        "desc": "Be careful! Lucy and Erza have joined the battle, and it looks like they're siding with the others. When will this misunderstanding end?!", 
+        "difficulty": 3, 
+        "dungeon": "Fairy Tail", 
+        "energy_use": 20, 
+        "id": "8301145", 
+        "karma": 0, 
+        "land": "Vortex", 
+        "mimic_info": {}, 
+        "name": "Let There Be Light", 
+        "requires": "8301144", 
+        "xp": 2500, 
+        "zel": 0
+    }, 
+    "8301146": {
+        "area": "Fairy Tail", 
+        "battle_count": 5, 
+        "clear_bonus": [
+            {
+                "gem": "1"
+            }
+        ], 
+        "continue": true, 
+        "desc": "Seems like Fairy Tail isn't backing down from an offensive stance. You've got one shot to help them understand things, so make it count!", 
+        "difficulty": 4, 
+        "dungeon": "Fairy Tail", 
+        "energy_use": 25, 
+        "id": "8301146", 
+        "karma": 0, 
+        "land": "Vortex", 
+        "mimic_info": {}, 
+        "name": "Towards Fantasia", 
+        "requires": "8301145", 
+        "xp": 4000, 
+        "zel": 0
+    }, 
     "8301201": {
         "area": "Dungeon Collab", 
         "battle_count": 5, 
@@ -39124,6 +39182,39 @@
         "name": "Setting up the Plan Lv. 2", 
         "requires": "9104200", 
         "xp": 21000, 
+        "zel": 0
+    }, 
+    "9104400": {
+        "area": "Ultimate challenges", 
+        "battle_count": 1, 
+        "clear_bonus": [
+            {
+                "item": {
+                    "count": "1", 
+                    "id": "47601"
+                }
+            }, 
+            {
+                "gem": "1"
+            }, 
+            {
+                "item": {
+                    "count": "1", 
+                    "id": "700050"
+                }
+            }
+        ], 
+        "continue": false, 
+        "desc": "Shusui, the most combative of the eight demon lords, is always looking to defend his title, and his life. Be ready to go into battle.", 
+        "difficulty": 1, 
+        "dungeon": "Echoes of Ishgria", 
+        "energy_use": 50, 
+        "id": "9104400", 
+        "karma": 0, 
+        "land": "Vortex", 
+        "mimic_info": {}, 
+        "name": "“The Most Powerful”", 
+        "xp": 12000, 
         "zel": 0
     }, 
     "911": {
