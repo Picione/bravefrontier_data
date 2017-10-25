@@ -15098,8 +15098,9 @@
                 "passive id": "1"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "40,50"
+                "passive id": "100", 
+                "spark crit chance%": 40, 
+                "spark crit dmg%": 50
             }, 
             {
                 "passive id": "75", 
@@ -16640,8 +16641,9 @@
                 "passive id": "31"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "20,30"
+                "passive id": "100", 
+                "spark crit chance%": 20, 
+                "spark crit dmg%": 30
             }, 
             {
                 "atk% buff": 30, 
@@ -18449,8 +18451,9 @@
                 "passive id": "101"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "40,50"
+                "passive id": "100", 
+                "spark crit chance%": 40, 
+                "spark crit dmg%": 50
             }
         ], 
         "id": 60200, 
@@ -18625,8 +18628,9 @@
                 "passive id": "31"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "40,50"
+                "passive id": "100", 
+                "spark crit chance%": 40, 
+                "spark crit dmg%": 50
             }, 
             {
                 "bb atk% buff": 130, 
@@ -18751,8 +18755,8 @@
                 "passive id": "1"
             }, 
             {
-                "unknown passive id": "111", 
-                "unknown passive params": "10"
+                "increase skill activation in arena%": 10, 
+                "passive id": "111"
             }, 
             {
                 "bc fill when attacked high": 3, 
@@ -20020,8 +20024,12 @@
                 "rec% buff": 30
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "100,100,100,100,1"
+                "bb atk% add": 100, 
+                "hp threshold": 100, 
+                "passive id": "103", 
+                "sbb atk% add": 100, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 100
             }, 
             {
                 "damage% for spark": 50, 
@@ -20102,6 +20110,17 @@
         "thumbnail": "item_thum_110000.png", 
         "type": "evomat"
     }, 
+    "700049": {
+        "desc": "Collect these pumpkins to craft the Spooky Lantern.", 
+        "id": 700049, 
+        "max_stack": 99, 
+        "name": "Spooky Pumpkin", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_700049.png", 
+        "type": "material"
+    }, 
     "700050": {
         "desc": "Collect 8 emblems to craft the Perfect Ishgria Emblem.", 
         "id": 700050, 
@@ -20136,8 +20155,8 @@
                 "passive id": "9"
             }, 
             {
-                "unknown passive id": "143", 
-                "unknown passive params": "150000"
+                "increase atk cap": 150000, 
+                "passive id": "143"
             }
         ], 
         "id": 700051, 
@@ -20160,6 +20179,80 @@
         "thumbnail": "sphere_thum_1_6.png", 
         "type": "sphere"
     }, 
+    "700052": {
+        "desc": "Boosts all parameters (30%) & boosts BB ATK (200%) when HP are full & negates elemental damage & reduce damage taken (5%)", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "bb atk% add": 200, 
+                "hp threshold": 100, 
+                "passive id": "103", 
+                "sbb atk% add": 200, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 200
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "dmg% mitigation": 5, 
+                "passive id": "8"
+            }
+        ], 
+        "id": 700052, 
+        "max_stack": 1, 
+        "name": "Super Spookfest Lantern", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 16, 
+                    "id": 700057
+                }, 
+                {
+                    "count": 1, 
+                    "id": 700056
+                }
+            ]
+        }, 
+        "sell_price": 300000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "item_thum_700052.png", 
+        "type": "sphere"
+    }, 
+    "700053": {
+        "desc": "Revives one ally from KO status (at 75% HP).", 
+        "effect": {
+            "effect": [
+                {
+                    "proc id": "12", 
+                    "revive to hp%": 75
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "party"
+        }, 
+        "id": 700053, 
+        "max equipped": 2, 
+        "max_stack": 99, 
+        "name": "Grail's Elixir", 
+        "raid": false, 
+        "rarity": 4, 
+        "sell_price": 300, 
+        "thumbnail": "item_thum_700053.png", 
+        "type": "consumable"
+    }, 
     "700054": {
         "desc": "Use this item to craft Book of E.N.D.", 
         "id": 700054, 
@@ -20180,6 +20273,37 @@
         "rarity": 4, 
         "sell_price": 100, 
         "thumbnail": "item_thum_404.png", 
+        "type": "material"
+    }, 
+    "700056": {
+        "desc": "Gives you permission from Htilit to craft the Super Spookfest Lantern.", 
+        "id": 700056, 
+        "max_stack": 99, 
+        "name": "Super Spookfest Ticket", 
+        "raid": false, 
+        "rarity": 5, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_700050.png", 
+        "type": "material"
+    }, 
+    "700057": {
+        "desc": "Apa tekadmu bulat? Aku selalu siap bertanggung jawab, sampai jiwaku yang terdalam!", 
+        "id": 700057, 
+        "max_stack": 99, 
+        "name": "Spooky Lantern", 
+        "raid": false, 
+        "rarity": 4, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 99, 
+                    "id": 700049
+                }
+            ]
+        }, 
+        "sell_price": 150000, 
+        "thumbnail": "item_thum_700051.png", 
         "type": "material"
     }, 
     "70100": {
@@ -20748,8 +20872,8 @@
                 "passive id": "78"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "1.5,30"
+                "passive id": "100", 
+                "spark crit dmg%": 30
             }
         ], 
         "id": 701013, 
@@ -24130,8 +24254,8 @@
                 "passive id": "34"
             }, 
             {
-                "unknown passive id": "143", 
-                "unknown passive params": "150000"
+                "increase atk cap": 150000, 
+                "passive id": "143"
             }, 
             {
                 "aoe atk inc%": -50, 
